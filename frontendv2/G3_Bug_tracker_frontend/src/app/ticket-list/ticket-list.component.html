@@ -1,0 +1,29 @@
+
+<h2> Ticket List </h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Ticket Number</th>
+            <th> Priority</th>
+            <th> Description</th>
+            <th> Timestamp</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let ticket of tickets" >
+            <td> {{ ticket.id }}</td>
+            <td> {{ ticket.priority }}</td>
+            <td> {{ ticket.description }}</td>
+            <td> {{ ticket.timestamp }}</td>
+            <td>
+                <button (click) = "updateTicket(ticket.id)" class = "btn btn-primary"> Update</button>
+                
+                <button (click) = "deleteTicket(ticket.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "ticketDetails(ticket.id)" class = "btn btn-primary" style="margin-left: 10px"> View</button>
+            </td>
+
+        </tr>
+
+    </tbody>
+<!-- Another Commment for Github -->
+</table>
