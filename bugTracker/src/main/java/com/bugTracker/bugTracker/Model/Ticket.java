@@ -18,6 +18,7 @@ public class Ticket {
     private String description;
     private String timestamp;
     private String priority;
+
     @ManyToOne
     private User users;
 

@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long userId;
+    private Long userId;
     @Column(name = "first_name")
     private String firstName;
     @Column( name = "last_name")
@@ -28,7 +28,7 @@ public class User {
     public User() {
     }
 
-    public User(long userId, String firstName, String lastName) {
+    public User(Long userId, String firstName, String lastName) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -42,11 +42,11 @@ public class User {
         this.userName = userName;
     }
 
-    public long getUserId() {
+    public Long getUserId() {
         return this.userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
