@@ -10,6 +10,7 @@ import { UserService } from '../user.service';
 })
 export class UserDetailsComponent implements OnInit {
 
+  url="./assets/picture.jpg";
   userId!: number;
   user?: User
   constructor(private route: ActivatedRoute, private employeService: UserService) { }

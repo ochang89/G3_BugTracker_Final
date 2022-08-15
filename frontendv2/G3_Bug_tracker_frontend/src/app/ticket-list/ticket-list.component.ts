@@ -16,6 +16,7 @@ export class TicketListComponent implements OnInit {
   user?: User = new User();
 
   tickets?: Ticket[];
+  searchText: any;
 
   constructor(private ticketService: TicketService,
     private route: ActivatedRoute,
@@ -45,4 +46,6 @@ export class TicketListComponent implements OnInit {
       this.getTickets();
     })
   }
+
+  
 }

@@ -1,15 +1,26 @@
-<h3 style="margin-left: 20px"> View Employee Details</h3>
-<div>
-    <div>
-        <label style="margin-left: 20px"> <b> First Name: </b></label> {{user?.firstName}}
+<div class="card col-md-6 offset-md-3 offset-md-3">
+    <div class="row1">
+      <div class ="userdetails">
+        <h3 style = "text-align: center">  User Details </h3>
+        </div>
+        <div class="card-body">
+          <h4 class ="text-center">{{user!.firstName}}&nbsp;&nbsp;{{user!.lastName}}</h4>
+            
+            <img [src]="url" class="pic">
+        
+           <table class ="table1">
+                
+                    <label class = "firstname"> <b>First Name: </b> &nbsp; {{user!.firstName}}</label><br>
+              
+                  <label class = "lastname"><b>Last Name:</b>&nbsp;{{user!.lastName}} </label><br> 
+            
+              
+                <label class = "username"><b> Username:</b>&nbsp; {{user!.userName}}</label><br>  
+           
+           
+              <label class = "userid"><b> User Id:</b>&nbsp; {{user!.userId}} </label><br>
+
+        </table>
     </div>
-    <div>
-        <label style="margin-left: 20px"> <b> Last Name: </b></label> {{user?.lastName}}
-    </div>
-    <div>
-        <label style="margin-left: 20px"> <b> User Name: </b></label> {{user?.userName}}
-    </div>
-    <div>
-        <label style="margin-left: 20px"> <b> Id: </b></label> {{user?.userId}}
-    </div>
+
 </div>
