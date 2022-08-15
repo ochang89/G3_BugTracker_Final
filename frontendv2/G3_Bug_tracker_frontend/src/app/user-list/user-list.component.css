@@ -1,0 +1,30 @@
+.bottom-container{
+    background-color: #EBF2FA;
+    margin-top: auto;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.th{
+    background-color: #679436;
+    color: white;
+    text-align: center;
+}
+
+.ticket-list{
+    font-weight: bolder;
+}
+
+.sub-header{
+    text-align: center;
+    font-weight: bold;
+}

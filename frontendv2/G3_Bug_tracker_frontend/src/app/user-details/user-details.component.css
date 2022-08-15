@@ -1,0 +1,43 @@
+.row1{
+    align-items: center;
+    border-style: solid;
+    
+}
+.firstname{
+    border-radius: 50px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.lastname{
+    border-radius: 50px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.pic{
+    display: block;
+    border-style: solid;
+    border-radius: 50px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table1{
+   
+  
+    border-radius: 50px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userdetails{
+    background-color: #679436;
+}

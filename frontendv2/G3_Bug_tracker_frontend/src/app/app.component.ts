@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bug-tracker';
+  icon = "./assets/bug_icon.png";
 }

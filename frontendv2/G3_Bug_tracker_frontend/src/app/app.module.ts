@@ -16,6 +16,9 @@ import { CreateTicketComponent } from './create-ticket/create-ticket.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { UpdateTicketComponent } from './update-ticket/update-ticket.component';
 import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
+import { SearchFormComponent } from './search-form/search-form.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 @NgModule({
   declarations: [
@@ -30,13 +33,15 @@ import { TicketDetailsComponent } from './ticket-details/ticket-details.componen
     CreateTicketComponent,
     HomePageComponent,
     UpdateTicketComponent,
-    TicketDetailsComponent
+    TicketDetailsComponent,
+    SearchFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
