@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Create Ticket </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Priority</label>
+                        <input type="text" class="form-control" id="priority" [(ngModel)]="ticket.priority"
+                            name="priority">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Description</label>
+                        <input type="text" class="form-control" id="description" [(ngModel)]="ticket.description"
+                            name="description">
+                    </div>
+                    <!-- New comment -->
+                    <div class="form-group">
+                        <label> Timestamp</label>
+                        <input type="text" class="form-control" id="timestamp" [(ngModel)]="ticket.timestamp"
+                            name="timestamp">
+                    </div>
+                    <!--
+                    <div class="form-group">
+                        <label> User Id</label>
+                        <input type="text" class="form-control" id="userId" [(ngModel)]="ticket.userId"
+                            name="userId">
+                    </div>
+                    -->
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
