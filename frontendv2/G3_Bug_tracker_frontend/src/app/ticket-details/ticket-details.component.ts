@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Ticket } from '../ticket';
 import { TicketService } from '../ticket.service';
 
@@ -13,7 +13,8 @@ export class TicketDetailsComponent implements OnInit {
   id!: number;
   ticket: Ticket = new Ticket();
   constructor(private ticketService: TicketService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
@@ -22,6 +23,6 @@ export class TicketDetailsComponent implements OnInit {
     this.ticketService.getTicketById(this.id).subscribe( data => {
       this.ticket = data;
     });
-  }
 
+  }
 }
