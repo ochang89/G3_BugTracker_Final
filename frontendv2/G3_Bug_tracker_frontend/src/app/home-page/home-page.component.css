@@ -1,0 +1,54 @@
+header.masthead {
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(1rem + 72px);
+    padding-bottom: 7rem;
+    background: linear-gradient(0deg, #427AA1 0%, #05668D 100%);
+    background-image: url("https://www.kochiesbusinessbuilders.com.au/wp-content/uploads/2021/09/AMEX-Landing-Page-Header-scaled.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section2{
+   text-align: center;
+   background-position: center;
+   background-color: gainsboro;
+   height: 400px;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 1%;    
+   background: linear-gradient(0deg, #427AA1 0%, #05668D 100%);
+}
+
+.blockquote{
+    color: white;
+    font-size: xx-large;
+}
+
+.blockquote-footer{
+    color:bisque;
+}
+.section3{
+    background-position: center;
+    background-color: gainsboro;
+    height: 400px;   
+    background: linear-gradient(0deg, #427AA1 0%, #05668D 100%);
+    background-image: url("https://t-mobile.scene7.com/is/image/Tmusprod/appeco_m1.desktop?wid=2560&hei=960");
+ }
+
+ .mobile{
+    text-align: center;
+    color: #fff;
+    padding-top: 5%;
+     
+ }

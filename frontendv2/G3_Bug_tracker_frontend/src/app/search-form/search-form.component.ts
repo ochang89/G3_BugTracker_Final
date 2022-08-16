@@ -10,6 +10,7 @@ import { TicketService } from '../ticket.service';
 })
 export class SearchFormComponent implements OnInit {
 
+  id!: number;
   ticket: Ticket = new Ticket();
 
   constructor(private ticketService: TicketService,
@@ -17,7 +18,9 @@ export class SearchFormComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
-  }
+    this.ticket = new Ticket();
+    };
+  
 
   ticketIdSubmit(id: number){
     // navigate to ticket-details component
