@@ -33,9 +33,15 @@ export class AppComponent {
   ticketDetails(id:number){
     // navigate to ticket-details component
     this.router.navigate(['ticket-details', id]);
+
+    // fixes the issue of page not reloading to correct ticket-detail id
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
+    this.router.navigate(['ticket-details', id]));
   }
 
   goHome(){
     // navigate to home page
     this.router.navigate(['home-page']);
-  }}
+  }
+  
+}
