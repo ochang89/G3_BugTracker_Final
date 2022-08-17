@@ -8,9 +8,12 @@
                 <form (ngSubmit)="onSubmit()">
 
                     <div class="form-group">
-                        <label>Priority</label>
-                        <input type="text" class="form-control" id="priority" [(ngModel)]="ticket.priority"
-                            name="priority">
+                        <label for="inputPriority">Priority</label>
+                        <select id="priority" class="form-control" [(ngModel)]="ticket.priority" name="priority">
+                            <option style="color:rgb(0, 172, 0)">Low</option>
+                        <option style="color:orange">Medium</option>
+                        <option style="color:red">High</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
